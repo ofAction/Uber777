@@ -26,6 +26,9 @@ nav {
 	background-color: #212121;
 	z-index: 10;
 }
+.btn:hover {
+	background: var(--accent-blue);
+	}
 .menu {
 	display: flex;
 	justify-content: space-between;
@@ -79,9 +82,9 @@ nav {
 	text-transform: uppercase;
 	text-decoration: none;
 }
-.subheader-button {
+.subheader-btn {
 	margin-top: 21px;
-	background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+	background-image: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
 	box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
 	border: none;
 	border-radius: 4px;
@@ -126,7 +129,7 @@ nav {
 .promo-btn {
 	display: block;
 	margin: 115px auto 0 auto;
-	background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+	background-image: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
 	box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
 	border: none;
@@ -264,6 +267,31 @@ nav {
 	margin: 0 auto;
 	cursor: pointer;
 }
+.mobile_app-item__plus::before {
+	content: '';
+	display: block;
+	width: 14px;
+	height: 2px;
+	background-color: var(--accent-blue);
+	transition: 0.2s all;
+}
+.mobile_app-item__plus::after {
+	content: '';
+	display: block;
+	width: 2px;
+	height: 14px;
+	background-color: var(--accent-blue);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	tr
+}
+.mobile_app-item__plus:hover::after {
+	background-color: var(--accent-red);
+}
+.mobile_app-item__plus:hover::before {
+	background-color: var(--accent-red);
+}
 
 .chose {
 	padding: 57px 0 138px 0;
@@ -290,4 +318,50 @@ nav {
 	color: var(--text);
 	text-align: center;
 	margin: 0;
+}
+
+.conditions {
+	padding: 66px 0 87px 0;
+}
+.conditions-title {
+	font-weight: 400;
+	font-size: 22px;
+	color: var(--accent-blue);
+	margin-top: 37px;
+	margin-bottom: 22px;
+}
+.title-red {
+	color: var(--accent-red);
+	margin-top: 61px;
+	margin-bottom: 22px;
+}
+.conditions-list {
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 34px;
+	color: var(--text);
+	list-style-type: none;
+	padding-left: 50px;
+}
+li {
+	position: relative;
+}
+.conditions-list li::before{
+	content: '';
+	display: block;
+	position: absolute;
+	left: -32px;
+	top: 8px;
+	width: 21px;
+	height: 21px;
+	background: url(../image/icons/rectangle-blue.png) center center/cover no-repeat;
+}
+.conditions-descr {
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 24px;
+	color: var(--accent-blue);
+}
+.list-red li::before {
+	background: url(../image/icons/rectangle-red.png) center center/cover no-repeat;
 }
