@@ -1,5 +1,19 @@
+:root {
+	--accent-blue: #1CA8C3;
+	--accent-red: #FF5656;
+	--text: #222222;
+	--second-text: #202020;
+	--light-text: #999999;
+	--white-text: #ffffff;
+	--dark-bg: #000000;
+	--light-bg: #FFFFFF;
+	--userfont: 'Roboto', sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+	--radius: 4px;
+}
+
 * {
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--userfont);
 }
 header {
 	position: relative;
@@ -22,7 +36,7 @@ nav {
 .menu-link {
 	font-weight: 300;
 	font-size: 15px;
-	color: #FFFFFF;
+	color: var(--white-text);
 	text-decoration: none;
 }
 .menu .menu-item {
@@ -45,13 +59,13 @@ nav {
 .subheader-official {
 	font-weight: 100;
 	font-size: 13px;
-	color: #FFFFFF;
+	color: var(--white-text);
 }
 .subheader-call {
 	margin-top: 24px;
 	font-weight: 300;
 	font-size: 12px;
-	color: #ffffff;
+	color: var(--white-text);
 	text-align: right;
 }
 .subheader-phone {
@@ -60,7 +74,7 @@ nav {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 20px;
-	color:#ffffff;
+	color: var(--white-text);
 	text-align: right;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -74,7 +88,7 @@ nav {
 	font-weight: 400;
 	font-size: 14px;
 	text-transform: uppercase;
-	color: #FFFFFF;
+	color: var(--white-text);
 	padding: 15px 20px;
 }
 
@@ -89,7 +103,7 @@ nav {
 	line-height: 60px;
 	text-transform: uppercase;
 	text-align: center;
-	color: #FFFFFF;
+	color: var(--white-text);
 	margin: 0;
 }
 .promo-subheader {
@@ -98,7 +112,7 @@ nav {
 	line-height: 36px;
 	text-transform: uppercase;
 	text-align: center;
-	color: #FFFFFF;
+	color: var(--white-text);
 	margin-top: 23px;
 }
 .promo-descr {
@@ -106,7 +120,7 @@ nav {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
-	color: #FFFFFF;
+	color: var(--white-text);
 	text-align: center;
 }
 .promo-btn {
@@ -120,7 +134,7 @@ nav {
 	font-size: 18px;
 	line-height: 63px;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: var(--white-text);
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
 	padding: 0 38px;
 }
@@ -133,9 +147,9 @@ nav {
 	height: 27px;
 	font-weight: 400;
 	font-size: 11px;
-	background-color: #000000;
+	background-color: var(--dark-bg);
 	text-transform: uppercase;
-	color: #ffffff;
+	color: var(--white-text);
 	margin: 0 auto;
 	padding: 8px 12px;
 	text-align: center;
@@ -143,7 +157,7 @@ nav {
 .title {
 	font-weight: 700;
 	font-size: 38px;
-	color: #222222;
+	color: var(--text);
 	text-transform: uppercase;
 	margin-top: 33px;
 	margin-bottom: 0;
@@ -153,7 +167,7 @@ nav {
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 21px;
-	color: #222222;
+	color: var(--text);
 	text-align: center;
 	margin: 0;
 }
@@ -169,7 +183,7 @@ nav {
 	align-items: center;
 	width: 116px;
 	height: 116px;
-	background-color: #1EACC7;
+	background-color: var(--accent-blue);
 	border-radius: 100%;
 	margin-right: 25px;
 }
@@ -181,14 +195,14 @@ nav {
 	font-size: 17px;
 	line-height: 21px;
 	align-items: center;
-	color: #1EACC7;
+	color: var(--accent-blue);
 }
 .preference-item__text {
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 21px;
 	align-items: center;
-	color: #202020;
+	color: var(--second-text);
 }
 
 .mobile-app {
@@ -231,7 +245,7 @@ nav {
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 31px;
-	color: #ffffff;
+	color: var(--white-text);
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -245,7 +259,7 @@ nav {
 	align-items: center;
 	width: 26px;
 	height: 26px;
-	background-color: #000000;
+	background-color: var(--dark-bg);
 	border-radius: 50%;
 	margin: 0 auto;
 	cursor: pointer;
@@ -256,14 +270,14 @@ nav {
 	background: #070716 url(../image/bg/back.png) bottom no-repeat;
 }
 .label__white {
-	background-color: #ffffff;
-	color: #000000;
+	background-color: var(--white-text);
+	color: var(--dark-bg);
 }
 .title__white {
-	color: #ffffff;
+	color: var(--white-text);
 }
 .subtitle__white {
-	color: #ffffff;
+	color: var(--white-text);
 }
 .car {
 	display: block;
@@ -273,7 +287,7 @@ nav {
 	font-weight: 300;
 	font-size: 17px;
 	line-height: 24px;
-	color: #222222;
+	color: var(--text);
 	text-align: center;
 	margin: 0;
 }
