@@ -4,9 +4,8 @@
 	--text: #222222;
 	--second-text: #202020;
 	--light-text: #999999;
-	--white-text: #ffffff;
+	--white: #ffffff;
 	--dark-bg: #000000;
-	--light-bg: #FFFFFF;
 	--userfont: 'Roboto', sans-serif;
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 	--radius: 4px;
@@ -14,6 +13,10 @@
 
 * {
 	font-family: var(--userfont);
+}
+.list {
+	list-style-type: none;
+	padding-inline-start: 0;
 }
 header {
 	position: relative;
@@ -39,7 +42,7 @@ nav {
 .menu-link {
 	font-weight: 300;
 	font-size: 15px;
-	color: var(--white-text);
+	color: var(--white);
 	text-decoration: none;
 }
 .menu .menu-item {
@@ -62,13 +65,13 @@ nav {
 .subheader-official {
 	font-weight: 100;
 	font-size: 13px;
-	color: var(--white-text);
+	color: var(--white);
 }
 .subheader-call {
 	margin-top: 24px;
 	font-weight: 300;
 	font-size: 12px;
-	color: var(--white-text);
+	color: var(--white);
 	text-align: right;
 }
 .subheader-phone {
@@ -77,7 +80,7 @@ nav {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 20px;
-	color: var(--white-text);
+	color: var(--white);
 	text-align: right;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -91,7 +94,7 @@ nav {
 	font-weight: 400;
 	font-size: 14px;
 	text-transform: uppercase;
-	color: var(--white-text);
+	color: var(--white);
 	padding: 15px 20px;
 }
 
@@ -106,7 +109,7 @@ nav {
 	line-height: 60px;
 	text-transform: uppercase;
 	text-align: center;
-	color: var(--white-text);
+	color: var(--white);
 	margin: 0;
 }
 .promo-subheader {
@@ -115,7 +118,7 @@ nav {
 	line-height: 36px;
 	text-transform: uppercase;
 	text-align: center;
-	color: var(--white-text);
+	color: var(--white);
 	margin-top: 23px;
 }
 .promo-descr {
@@ -123,7 +126,7 @@ nav {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
-	color: var(--white-text);
+	color: var(--white);
 	text-align: center;
 }
 .promo-btn {
@@ -137,7 +140,7 @@ nav {
 	font-size: 18px;
 	line-height: 63px;
 	text-transform: uppercase;
-	color: var(--white-text);
+	color: var(--white);
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
 	padding: 0 38px;
 }
@@ -152,7 +155,7 @@ nav {
 	font-size: 11px;
 	background-color: var(--dark-bg);
 	text-transform: uppercase;
-	color: var(--white-text);
+	color: var(--white);
 	margin: 0 auto;
 	padding: 8px 12px;
 	text-align: center;
@@ -248,7 +251,7 @@ nav {
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 31px;
-	color: var(--white-text);
+	color: var(--white);
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -298,14 +301,14 @@ nav {
 	background: #070716 url(../image/bg/back.png) bottom no-repeat;
 }
 .label__white {
-	background-color: var(--white-text);
+	background-color: var(--white);
 	color: var(--dark-bg);
 }
 .title__white {
-	color: var(--white-text);
+	color: var(--white);
 }
 .subtitle__white {
-	color: var(--white-text);
+	color: var(--white);
 }
 .car {
 	display: block;
@@ -364,4 +367,113 @@ li {
 }
 .list-red li::before {
 	background: url(../image/icons/rectangle-red.png) center center/cover no-repeat;
+}
+
+.city {
+	padding: 48px 0 48px 0;
+	background:#080816 url(../image/bg/world_bg.jpg) center center/cover no-repeat;
+}
+.city__all {
+	display: block;
+	margin: 0 auto;
+	margin-top: 478px;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 68px;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.city__all:hover {
+	text-decoration: underline;
+}
+
+footer{
+	padding: 13px 20px 25px 25px;
+}
+footer a {
+	text-decoration: none;
+	color: #070716;
+}
+.footer__item {
+	display: flex;
+}
+.footer__line {
+	width: 299px;
+	height: 4px;
+	background-color: var(--accent-blue);
+	margin: 0 auto;
+}
+.footer__item {
+	display: flex;
+	justify-content: space-between;
+}
+.social {
+	width: 33%;
+	display: flex;
+	padding: 48px 211px 68px 0;
+}
+.social__link {
+ margin-right: 8px;
+}
+.social__link img {
+	width: 35px;
+	align-items: center;
+}
+.footer__links {
+	width: 33%;
+	margin: 0 auto;
+}
+.first__list {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 33px;
+}
+.first__list--item {
+	font-weight: 300;
+	font-size: 15px;
+	align-items: center;
+	text-transform: uppercase;
+}
+.second__list {
+	display: flex;
+	justify-content: space-evenly;
+}
+.second__list--item {
+	font-weight: 300;
+	font-size: 11px;
+	align-items: center;
+	text-transform: uppercase;
+}
+.second__list--item a {
+	color: #999999;
+}
+.lang {
+	display: block;
+	font-weight: 400;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.lang a {
+	color: var(--accent-blue);
+}
+.download {
+	width: 33%;
+}
+.download__list {
+	display: flex;
+	padding: 51px 0 51px 73px;
+	align-items: center;
+	justify-content: flex-end;
+}
+.download__item {
+	margin-right: 8px;
+}
+.download__item img {
+	width: 100px;
+}
+.windows {
+	border-radius: 50%;
 }
