@@ -23,6 +23,12 @@
 	.conditions-descr {
 		font-size: 15px;
 	}
+	.second__list {
+		justify-content: space-between;
+	}
+	.second__list--item {
+		font-size: 10px;
+	}
 	.download__item img {
 		width: 85px;
 	}
