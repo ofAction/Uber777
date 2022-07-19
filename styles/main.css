@@ -98,9 +98,11 @@ nav {
 	font-size: 14px;
 	text-transform: uppercase;
 	color: var(--white);
-	padding: 15px 20px;
 	width: 172px;
 	height: 47px;
+}
+.humburger {
+	display: none;
 }
 
 .promo {
@@ -143,7 +145,6 @@ nav {
 	border: none;
 	font-weight: 400;
 	font-size: 18px;
-	line-height: 63px;
 	text-transform: uppercase;
 	color: var(--white);
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
@@ -294,6 +295,7 @@ nav {
 	transform: translateX(-50%);
 	tr
 }
+
 .mobile_app-item__plus:hover::after {
 	background-color: var(--accent-red);
 }
@@ -481,4 +483,7 @@ footer a {
 }
 .windows {
 	border-radius: 50%;
+}
+.xs-visible {
+	display: none;
 }

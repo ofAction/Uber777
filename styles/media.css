@@ -53,7 +53,6 @@
 	.subheader__btn {
 		margin-top: 27px;
 		font-size: 12px;
-		padding: 12px 20px;
 		width: 100%;
 		height: 40px;
 	}
@@ -66,6 +65,9 @@
 	.preference-block {
 		flex-direction: column;
 		align-items: center;
+	}
+	.preference-img {
+		margin-right: 0;
 	}
 	.preference-item {
 		width: 330px;
@@ -113,5 +115,247 @@
 	}
 	.menu__link {
 		font-size: 20px;
+	}
+	.hamburger {
+		display: block;
+		position: absolute;
+		right: 11px;
+		top: 30%;
+		transform: translateX(-50%);
+		width: 25px;
+		height: 12px;
+	}
+	.hamburger span {
+		display: block;
+		height: 2px;
+		width: 100%;
+		background-color: #fff;
+		margin-bottom: 4px;
+		transition: 0.5s all;
+	}
+	.hamburger__active span {
+		margin-bottom: -2px;
+	}
+		.hamburger__active span:nth-child(1) {
+			transform: translateX(3px) rotate(-45deg);
+		}
+		.hamburger__active span:nth-child(2) {
+			display: none;
+		}
+		.hamburger__active span:nth-child(3) {
+			transform: translateX(3px) rotate(45deg);
+		}
+	.xs-hidden {
+		display: none;
+	}
+	.xs-visible {
+		display: block;
+	}
+	.subheader-phone {
+		display: block;
+		margin-top: 10px;
+		font-weight: 400;
+		font-size: 14px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.subheader__btn {
+		display: block;
+		width: 200px;
+		height: 40px;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+	.promo-header {
+		font-size: 35px;
+	}
+}
+@media (max-width: 575px) {
+	nav {
+		height: 30px;
+	}
+	.subheader {
+		margin-top: 29px;
+		height: 62px;
+	}
+	.subheader-official {
+		display: none;
+	}
+	.subheader-logo {
+		margin-top: 20px;
+	}
+	.subheader-phone {
+		font-size: 12px;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-top: 9px;
+	}
+	.subheader__btn {
+		width: 110px;
+		height: 22px;
+		font-size: 8px;
+		margin-top: 5px;
+	}
+	.promo {
+		min-height: 400px;
+		padding: 101px 0 35px 0;
+	}
+	.promo-descr {
+		display: none;
+	}
+	.promo-header {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.promo-subheader {
+		font-size: 20px;
+		line-height: 23px;
+	}
+	.promo-btn {
+		width: 210px;
+		height: 50px;
+		font-size: 16px;
+		margin-top: 72px;
+		padding: 0px 20px;
+	}
+	.menu {
+		width: 85%;
+	}
+	.menu__item {
+		width: 100%;
+		text-align: center;
+		padding: 5px;
+	}
+	.menu__link {
+		display: block;
+	}
+	.label {
+		font-size: 11px;
+	}
+		.title {
+		font-size: 16px;
+		margin-top: 16px;
+		line-height: 16px;
+	}
+	.preference {
+		padding-bottom: 38px;
+	}
+	.preference-block {
+		margin-top: 24px;
+	}
+	.preference-img {
+		width: 100px;
+		height: 100px;
+	}
+	.preference-item {
+		width: 100%;
+		margin-top: 24px;
+	}
+	.preference-item__title {
+		font-size: 16px;
+		margin-bottom: 0;
+	}
+	.mobile-app {
+		padding: 25px 0 42px 0;
+	}
+	.subtitle {
+		margin-top: 10px;
+	}
+	.mobile_app-item {
+		margin-top: 30px;
+		width: 100%;
+	}
+	.chose {
+		padding: 27px 0 31px 0;
+		background: #070716;
+	}
+	.chose .title__white {
+		display: none;
+	}
+	.slogan {
+		color: #FFFFFF;
+	}
+	.conditions {
+		padding: 22px 0 30px 0;
+		width: 100%;
+	}
+	.conditions-title {
+		font-size: 16px;
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+	.conditions-list {
+		font-size: 14px;
+		line-height: 24px;
+		padding-left: 32px;
+		margin-bottom: 0;
+	}
+	.conditions-descr {
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+	.city {
+		padding: 25px 0 30px 0;
+		background: url(../image/bg/world_bg.jpg) center 50%
+	}
+	.title__white {
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.subtitle__white{
+		font-size: 14px;
+	}
+	.city__all {
+		font-size: 15px;
+	}
+	footer {
+		padding: 24px 18px 30px 18px;
+	}
+	.footer__line {
+		width: 255px;
+		margin: 0 auto;
+	}
+	.footer__item {
+		flex-direction: column;
+		margin-top: 21px;
+	}
+	.footer__item div {
+		margin-bottom: 19px;
+	}
+	.footer__item div:nth-child(1) {
+		order: 2;
+	}
+	.footer__item div:nth-child(2) {
+		order: 1;
+	}
+	.footer__item div:nth-child(3) {
+		order: 3;
+		margin-bottom: 0;
+	}
+	.footer__links {
+		width: 290px;
+	}
+	.first__list--item {
+		font-style: 14px;
+	}
+	.second__list {
+		flex-wrap: wrap;
+		justify-content: center;
+		font-size: 11px;
+		line-height: 11px;
+	}
+	.second__list--item a {
+		margin-top: 10px;
+	}
+	.social {
+		width: 0;
+		padding: 0 160px 0 0;
+		margin: 0 auto;
+	}
+	.download {
+		width: 100%;
+	}
+	.download__list {
+		padding: 0;
 	}
 }
