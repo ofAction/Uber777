@@ -118,23 +118,28 @@
 	}
 
 	.footer__line {
-		width: 50%;
+		width: 35%;
 	}
 
 	.footer__links {
 		width: 100%;
 	}
 
-	.first__list {
-		justify-content: space-between;
-	}
-
 	.first__list--item {
 		font-size: 11px;
 	}
 
-	.download {
-		width: 100%;
+	.second__list {
+		flex-flow: wrap;
+	}
+
+	.download__list {
+		flex-direction: column;
+	}
+
+	.download__item img {
+		width: 100px;
+		margin-bottom: 12px;
 	}
 }
 
@@ -232,6 +237,30 @@
 		font-size: 35px;
 	}
 
+	.footer__item div {
+		width: 50%;
+	}
+
+	.first__list {
+		margin-top: 20px;
+	}
+
+	.first__list--item {
+		font-size: 9px;
+	}
+
+	.second__list {
+		flex-flow: wrap;
+	}
+
+	.second__list--item {
+		margin-bottom: 5px;
+	}
+
+	.download__list {
+		align-items: center;
+		padding: 30px 0 30px 0;
+	}
 }
 
 @media (max-width: 575px) {
@@ -289,6 +318,7 @@
 		width: 210px;
 		height: 50px;
 		font-size: 16px;
+		line-height: 50px;
 		margin-top: 72px;
 		padding: 0px 20px;
 	}
@@ -448,9 +478,9 @@
 
 	.second__list {
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-around;
 		font-size: 11px;
-		line-height: 11px;
+		line-height: 15px;
 	}
 
 	.second__list--item a {
@@ -459,8 +489,9 @@
 
 	.social {
 		width: 0;
-		padding: 0 160px 0 0;
+		padding: 0;
 		margin: 0 auto;
+		justify-content: center;
 	}
 
 	.download {
